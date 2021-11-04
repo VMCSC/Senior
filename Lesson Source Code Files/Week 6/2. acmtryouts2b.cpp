@@ -28,14 +28,14 @@ the balloon will make it to the cell to the right of that cell
 */
 
 const int nax = 1e3 + 5;
-int l,n,c,r,d,m,h,diff[nax];
+long long l,n,c,r,d,m,h,diff[nax];
 
 void solve(){
 	memset(diff, 0, sizeof(diff));
 	cin >> l >> n;
 	for (int i = 1; i <= n; ++i){
 		cin >> c >> r >> d;
-		diff[max(1,c-r)] += d;
+		diff[max(1ll,c-r)] += d;
 		diff[min(l,c+r)+1] -= d;
 	}
 	//restore the original updated array

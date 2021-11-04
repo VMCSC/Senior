@@ -6,7 +6,7 @@ https://dmoj.ca/problem/cake
 */
 
 const int nax = 5e3 + 5;
-int n,m,grid[nax][nax],k;
+long long n,m,grid[nax][nax],k;
 
 int32_t main() {
 	ios_base::sync_with_stdio(false); cin.tie(0);
